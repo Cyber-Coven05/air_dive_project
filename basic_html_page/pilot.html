@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pilot</title>
+    <title>Dykker</title>
     <!-- Bootstrap import -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
@@ -11,51 +11,73 @@
     <!-- BootStrap Script import-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     
-    <!-- navbar start -->
-    <nav style="padding: 0%;" class="navbar navbar-expand-lg bg-body-tertiary">
-        <!--background colour for band-->
-        <div style="padding-inline: 30% 30%; background-color: #deded5;" class="container-fluid">          
-        <img style="padding-right: 1%; padding-top: 1%; padding-bottom: 1%;" src="images/fly.jpg" alt="Logo" width="180" height="80">
-          <a class="navbar-brand" href="home.html">AirDiveDoc</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div style="padding-left: 30%;" class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="home.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
-              
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="services.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Service
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Persondatapolitik.html">Persondatapolitik</a>
-              </li>
+  <!-- navbar start -->
+  <nav style="padding: 0%;" class="navbar navbar-expand-lg bg-body-tertiary">
+    <!--background colour for band-->
+    <div style="padding-inline: 30% 30%; background-color: #deded5;" class="container-fluid">          
+    <img style="padding-right: 1%; padding-top: 1%; padding-bottom: 1%;" src="images/fly.jpg" alt="Logo" width="180" height="80">
+      <a class="navbar-brand" href="home.html">AirDiveDoc</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div style="padding-left: 30%;" class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="services.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Service
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="pilot.html">Pilot</a></li>
+              <li><a class="dropdown-item" href="dykker.html">Dykker</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
-          </div>
-        </div>
-      </nav>
-    <!-- navbar stop -->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Persondatapolitik.html">Persondatapolitik</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!-- navbar stop -->
 
 
 
 
   <div style="background-color: rgba(231, 231, 231, 0.671); padding-bottom: 30%; padding-inline: 3% 3%;" class="container">
-        
+        <!-- Image Carousel Start -->
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/fly.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/kristopher-allison-KU4zYj4u0mo-unsplash.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/shino-nakamura-_yc81riyEQw-unsplash.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!-- Image Carousel Stop -->
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos repudiandae facere id, aut quisquam dignissimos dolores animi. Consequatur voluptates reiciendis voluptas repellat quibusdam suscipit nobis libero tempore unde in consequuntur ipsam amet facilis labore, dolorem aspernatur a fugiat voluptatem debitis fugit! Voluptatibus unde quae rem totam temporibus sequi autem! Maiores id voluptatibus cupiditate doloremque quisquam reprehenderit illum numquam alias obcaecati beatae, rerum iste tenetur? Dolore, hic. Illum ducimus, maxime vero distinctio expedita culpa ipsa totam consequuntur ut vitae assumenda eos! Repellendus possimus, consequuntur est exercitationem laudantium ipsam porro ut voluptatibus fugit, nulla ad accusamus numquam? Fuga vitae est repellendus eius.
 
 

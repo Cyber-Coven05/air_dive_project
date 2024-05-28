@@ -6,7 +6,7 @@ from flask import Flask, redirect, url_for, render_template, request, session
 app = Flask(__name__)
 app.secret_key = "r@nd0mSk_1"
 
-# FUNKTIONER
+# FUNKTIONER TIL DATABASE
 def register_user_to_db(username, password):
     con = sqlite3.connect('database.db')
     cur = con.cursor()
@@ -25,6 +25,7 @@ def check_user(username, password):
         return True
     else:
         return False
+
 
 
 # DECORATORS WEBSITE
@@ -72,7 +73,7 @@ def tidsbestilling():
 
 
 
-
+# DECORATORS LOGIN
 @app.route('/register', methods=["POST", "GET"])
 def register():
     if request.method == 'POST':
@@ -95,15 +96,15 @@ def login():
         if check_user(username, password):
             session['username'] = username
 
-        return redirect(url_for('base'))
+        return redirect(url_for('home'))
     else:
-        return redirect(url_for('index'))
+        return render_template('login.html')
 
 
-@app.route('/login', methods=['POST', "GET"])
+@app.route('/home', methods=['POST', "GET"])
 def home():
     if 'username' in session:
-        return render_template('forside.html', username=session['username'])
+        return render_template('home.html', username=session['username'])
     else:
         return "Username or Password is wrong!"
 
@@ -111,7 +112,7 @@ def home():
 @app.route('/logout')
 def logout():
     session.clear()
-    return redirect(url_for('base'))
+    return redirect(url_for('index'))
 
 
 if __name__ == '__main__':

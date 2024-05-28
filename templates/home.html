@@ -1,0 +1,19 @@
+{% extends 'base.html'%}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home(logged in)</title>
+</head>
+<body>
+<div class="container">
+    <h1> Velkommen, {{username}}</h1>
+    <br/>
+    <a href="/logout" class="btn btn-primary btn-sm">Log ud</a>
+</div>
+</body>
+</html>
+ 
+{% endblock %}

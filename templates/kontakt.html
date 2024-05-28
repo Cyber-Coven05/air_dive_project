@@ -1,0 +1,59 @@
+{% extends 'base.html'%}
+{% block content %}
+
+
+  <section>
+    <div style="background-color: rgba(231, 231, 231, 0); padding-bottom: 5%; padding-inline: 3% 3%;"
+      class="container">
+      <div class="row">
+        <div class="col-12">
+          <hr />
+          <p>
+            Hvis du har nogen spørgsmål, bedes du trykke på den store blå knap, og sende mig en e-mail.
+            Alternativt kan du ringe til det viste nummer nedenfor.
+          </p>
+          <hr />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div style="background-color: rgba(231, 231, 231, 0); padding-bottom: 5%; padding-inline: 3% 3%;"
+      class="container d-flex">
+      <div style="padding-right: 25px;" class="w-50 d-flex flex-column">
+        <img style="margin-bottom: 25px;" class="rounded w-100 object-fit-contain" src="static/envelope.jpg">
+        <a href="mailto:rasax@dadlnet.dk" target="_blank" style="padding-inline: 100px;" class="btn btn-primary">Send
+          e-Mail</a>
+      </div>
+      <div style="padding-left: 25px;" class="w-50">
+        <h5>Ring til os</h5>
+        <p><a href="tel:+4500000000"><i class="fas fa-phone"></i> +(45) 00000000 </a><br>
+        </p>
+        <h5>Email / Website</h5>
+        <p>
+          <a href="mailto:rasax@dadlnet.dk"><i class="fas fa-envelope"></i> rasax@dadlnet.dk</a><br>
+          <a href="https://airdivedoc.dk/"><i class="fas fa-globe"></i></i> www.airdivedoc.dk </a>
+
+        </p>
+        <h5>Adresse</h5>
+        <p>
+          Juniorsgade 35, 4990 Sakskøbing
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div style="background-color: rgba(231, 231, 231, 0); padding-bottom: 3%; padding-inline: 3% 3%;"
+      class="container">
+      <!-- <iframe class="embed-responsive-item" src="..."></iframe> -->
+      <div style="width: 100%">
+        <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+          src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Juniorsgade%2035,%204990%20Saksk%C3%B8bing+(AirDiveDoc)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+          <a href="https://www.gps.ie/">gps devices</a>
+        </iframe>
+      </div>
+  </section>
+  
+{% endblock %}
